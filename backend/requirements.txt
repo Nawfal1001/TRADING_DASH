@@ -1,0 +1,16 @@
+fastapi==0.111.0
+uvicorn==0.30.1
+python-dotenv==1.0.1
+httpx==0.27.0
+pandas==2.2.2
+numpy==1.26.4
+ta==0.11.0
+yfinance==0.2.40
+ccxt==4.3.50
+alpaca-py==0.20.0
+ib-insync==0.9.86
+python-telegram-bot==21.3
+google-generativeai==0.7.2
+aiosmtplib==3.0.1
+pydantic==2.7.1
+pydantic-settings==2.3.1
