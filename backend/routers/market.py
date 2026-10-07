@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Query
 from services.market_service import get_stock_data, get_crypto_data, search_assets, get_top_movers
+from services.live_data_service import CACHE as LIVE_CACHE
 
 router = APIRouter()
 
@@ -24,3 +25,7 @@ async def market_overview():
     stocks = await get_top_movers("stocks")
     crypto = await get_top_movers("crypto")
     return {"stocks": stocks, "crypto": crypto}
+
+@router.get("/live")
+async def live_market():
+    return LIVE_CACHE
